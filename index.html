@@ -1,0 +1,68 @@
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+	<title>MY WEB</title>
+    <style>
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .animated-card {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px var(--sl);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+            transform: translateY(0);
+            opacity: 0;
+            animation: fadeIn 0.6s forwards;
+        }
+
+        @keyframes fadeIn {
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .card-hover {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+        }
+        .card-hover:hover {
+            transform: perspective(1000px) rotateY(10deg) scale(1.02);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Welcome to MY WEB</h1>
+    <p style="text-align: center;">This is a simple web page.</p>
+    <p style="text-align: center;">It is created by <strong><em>peisi0</em>.</p>
+
+    <section id="events" style="padding: 5rem 0; background: #ffffff">
+        <div class="container">
+            <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 3rem;">My Projects</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <div class="animated-card card-hover" style="flex: 1; min-width: 300px; animation-delay: 0.4s;">
+                    <h3 style="color: #2a7d00; margin-bottom: 1rem;">Windows 11.4514</h3>
+                    <p>Introduce all new WiNdOwS 11</p>
+                    <p>Repositorie: <a href="https://klpig.github.io/">https://github.com/peisi0/win11</a></p>
+                    <p style="font-style: italic; margin-top: 1rem;"><a href="https://klpig.github.io/underia/">Try it now</a></p>
+                </div>
+                <div class="animated-card card-hover" style="flex: 1; min-width: 300px; animation-delay: 0.6s;">
+                    <h3 style="color: #2a7d00; margin-bottom: 1rem;">Caridon University 家里蹲大学</h3>
+                    <p><em>Caridon 家里蹲</em>, as it name called, is a university in your own home</p>
+                    <p style="font-style: italic; margin-top: 1rem;"><a href="https://klpig.github.io/KunGame/"><em>Visit the Caridon University and register now!</em></a></p>
+                </div>
+                <div class="animated-card card-hover" style="flex: 1; min-width: 300px; animation-delay: 0.8s;">
+                    <h3 style="color: #2a7d00; margin-bottom: 1rem;">Ball Game</h3>
+                    <p>Just for test. (generated in Scratch)</p>
+                    <p style="font-style: italic; margin-top: 1rem;">Link: <a href="https://www.muyao.site/noname">https://peisi0.github.io/game0/</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <p style="text-align: center;">Thank you for visiting.</p>
+</body>
+</html>
