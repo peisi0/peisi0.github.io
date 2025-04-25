@@ -1,3 +1,4 @@
+
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
@@ -14,7 +15,7 @@
             background: #ffffff;
             border-radius: 12px;
             padding: 2rem;
-            box-shadow: 0 5px 15px var(--sl);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
             transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
             transform: translateY(0);
             opacity: 0;
@@ -28,14 +29,19 @@
         .card-hover {
             transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
         }
+
         .card-hover:hover {
             transform: perspective(1000px) rotateY(10deg) scale(1.02);
             box-shadow: 0 15px 30px rgba(0,0,0,0.2);
         }
+
+        .a{
+            color: #2a7d00;
+        }
     </style>
 </head>
 <body>
-    <h1 style="text-align: center;">Welcome to MY WEB</h1>
+    <h1 style="text-align: center; color: #2a7d00">Welcome to MY WEB</h1>
     <p style="text-align: center;">This is a simple web page.</p>
     <p style="text-align: center;">It is created by <strong><em>peisi0</em>.</p>
 
@@ -46,7 +52,7 @@
                 <div class="animated-card card-hover" style="flex: 1; min-width: 300px; animation-delay: 0.4s;">
                     <h3 style="color: #2a7d00; margin-bottom: 1rem;">Windows 11.4514</h3>
                     <p>Introduce all new WiNdOwS 11</p>
-                    <p>Repositorie: <a href="https://klpig.github.io/">https://github.com/peisi0/win11</a></p>
+                    <p>Repository: <a href="https://github.com/peisi0/win11">https://github.com/peisi0/win11</a></p>
                     <p style="font-style: italic; margin-top: 1rem;"><a href="https://peisi0.github.io/win11/">Try it now</a></p>
                 </div>
                 <div class="animated-card card-hover" style="flex: 1; min-width: 300px; animation-delay: 0.6s;">
